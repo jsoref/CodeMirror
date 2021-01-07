@@ -1,0 +1,16 @@
+^mode/css/css\.js$
+^mode/mbox/index\.html$
+^mode/asciiarmor/index\.html$
+^mode/stylus/stylus\.js$
+^test/vim_test\.js$
+^mode/stex/index\.html$
+^\.github/
+^AUTHORS$
+^package\.json$
+^LICENSE$
+ignore$
+\.editorconfig$
+\.gitattributes$
+\.png$
+\.svg$
+^test/
