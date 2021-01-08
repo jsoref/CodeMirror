@@ -1,0 +1,32 @@
+# YouTube
+https?://(?:(?:www\.|)youtube\.com|youtu.be)/(?:channel/|embed/|)[-a-zA-Z0-9?&=_]*
+# Google themes
+themes\.googleusercontent\.com/static/fonts/[^/]+/v\d+/[^.]+.
+# msdn
+msdn\.microsoft\.com/[^/]+/library/[^/]*\.aspx
+# data urls
+data:[a-zA-Z=;,/0-9+-]+
+# inline svg
+%3Csvg.*%3C/sv
+# URL escaped characters
+\%[0-9A-F]{2}
+
+# hex digits including css/html color classes:
+(?:[\\0][xXoO]|\\u|[uU]\+|#x?|\%23)[0-9a-fA-FgGrR_]{2,}[nuU]?[lL]{0,2}\b
+# ignore long runs of a single character:
+\b([A-Za-z])\1{3,}\b
+# 
+[Kk]nownMethods.*$
+[Kk]eywords = .*$
+[Rr]egexp?.*$
+stream\.match\(\/.*$
+ELEMENT title.*$
+langs = .*$
+builtin:.*$
+Builtins = .*$
+support: .*$
+atoms: .*$
+# sha-1
+\b[0-9a-f]{40}\b
+# trof
+\\f[BILR]
